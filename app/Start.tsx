@@ -1,6 +1,9 @@
 import ButtonComponent from '@/src/components/Buttons';
-import { Container, Logo, Title, SubTitle } from '../../../app/styles/Start.styles'
-import { Rules } from '@/src/components/Buttons/styles';
+import { Container, Logo, Title, SubTitle } from './styles/Start.styles'
+import { Rules } from './styles/Start.styles';
+import { Link } from 'expo-router';
+
+
 function Start () {
 
 const handleNavToPlayAlone = () =>{
@@ -16,7 +19,7 @@ const handleNavToRules = () => {
     return ( 
         <Container>
             <Logo
-            source={require("../../../assets/images/logo_dark.png")}
+            source={require("../assets/images/logo_dark.png")}
             />
             <Title>Bem vindo ao {"\n"} Bomb Game</Title>
             <SubTitle>Escolha um modo de jogo.</SubTitle>
@@ -29,7 +32,11 @@ const handleNavToRules = () => {
               buttonText={"Jogar em dupla"}
               handlePress={handleNavToPlayTogether}
             />
-            <Rules onPress={handleNavToRules}>Ver as regras do jogo</Rules>
+
+              <Rules onPress={handleNavToRules}>
+                <Link href="/Rules">Ver as regras do jogo</Link>
+                </Rules>
+
         </Container>
      );
 }

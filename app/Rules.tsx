@@ -1,16 +1,17 @@
-import { Container, Icon, NumberParagraph, Paragraph, ScrollTextRules, Title } from './styles'
+import { Container, Icon, NumberParagraph, Paragraph, ScrollTextRules, Title } from './styles/Rules.styles'
 import { Alert, Text } from 'react-native';
+import { router } from 'expo-router';
 
 function Rules () {
 
 const handleNavToStart = () => {
-    Alert.alert('ícone clicado')
+  router.back();
 }
 
     return ( 
         <Container>
-            <Icon name='arrow-back-ios' onPress={}/>
-            <ScrollTextRules>
+            <Icon name='arrow-back-ios' onPress={handleNavToStart}/>
+            <ScrollTextRules> 
               <Title>
                 Jogando Solo    
               </Title>

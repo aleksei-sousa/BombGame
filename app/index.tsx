@@ -1,15 +1,44 @@
-import { Text, View } from "react-native";
-import Start from '../src/pages/start/index'
-import Rules from "@/src/pages/rules";
-import { StatusBar } from "react-native";
+import ButtonComponent from '@/src/components/Buttons';
+import { Container, Logo, Title, SubTitle } from './styles/Start.styles'
+import { Rules } from './styles/Start.styles';
+import { Link } from 'expo-router';
 
-export default function Index() {
-  return (
-    <>
-      <StatusBar color="white" backgroundColor='black' />
-      {/* <Start/> */}
-      <Rules/>
-    </>
 
-  );
+function Start () {
+
+const handleNavToPlayAlone = () =>{
+    console.log('teste de play alone')
 }
+const handleNavToPlayTogether = () =>{
+    console.log('teste de play Together')
+}
+const handleNavToRules = () => {
+  console.log('veja as regras')
+}
+
+    return ( 
+        <Container>
+            <Logo
+            source={require("../assets/images/logo_dark.png")}
+            />
+            <Title>Bem vindo ao {"\n"} Bomb Game</Title>
+            <SubTitle>Escolha um modo de jogo.</SubTitle>
+            <ButtonComponent
+              buttonText={"Jogar solo"}
+              handlePress={handleNavToPlayAlone}
+            />
+
+            <ButtonComponent
+              buttonText={"Jogar em dupla"}
+              handlePress={handleNavToPlayTogether}
+            />
+
+              <Rules onPress={handleNavToRules}>
+                <Link href="/Rules">Ver as regras do jogo</Link>
+              </Rules>
+
+        </Container>
+     );
+}
+
+export default Start ;

@@ -19,12 +19,3 @@ export const ButtonContent = styled.Text`
   color: black;
   font-family: sans-serif;
 `
-
-export const Rules = styled.Text`
-  margin-top: ${RFValue(80)}px;
-  font-size: ${RFValue(16)}px;
-  font-family: sans-serif;
-  text-align: center;
-  color: white;
-  font-weight: bold; 
-`
