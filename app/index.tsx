@@ -2,12 +2,13 @@ import ButtonComponent from '@/src/components/Buttons';
 import { Container, Logo, Title, SubTitle } from './styles/Start.styles'
 import { Rules } from './styles/Start.styles';
 import { Link } from 'expo-router';
+import { router } from 'expo-router';
 
 
 function Start () {
 
 const handleNavToPlayAlone = () =>{
-    console.log('teste de play alone')
+    router.push('/PlayAlone')
 }
 const handleNavToPlayTogether = () =>{
     console.log('teste de play Together')

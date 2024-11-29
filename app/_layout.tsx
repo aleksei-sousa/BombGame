@@ -52,6 +52,7 @@ export default function RootLayout() {
           <Stack.Screen name="index" />
           <Stack.Screen name="Start" />
           <Stack.Screen name="Rules" />
+          <Stack.Screen name="PlayAlone" />
         </Stack>
       </View>
     </ThemeProvider>
