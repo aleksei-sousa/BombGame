@@ -7,9 +7,6 @@ export const Container = styled.View`
     padding-top: ${getStatusBarHeight() + RFValue(50)}px;
     background-color: ${({theme}) => theme.colors.background};
     align-items: center;
-
-    /* justify-content: space-between; */
-    /* flex-direction: column; */
 `
 
 export const Title = styled.Text`

@@ -11,7 +11,7 @@ const handleNavToPlayAlone = () =>{
     router.push('/PlayAlone')
 }
 const handleNavToPlayTogether = () =>{
-    console.log('teste de play Together')
+  router.push('/PlayTogether')
 }
 const handleNavToRules = () => {
   console.log('veja as regras')

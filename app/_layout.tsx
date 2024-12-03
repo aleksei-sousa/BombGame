@@ -50,9 +50,10 @@ export default function RootLayout() {
         <StatusBar barStyle={"light-content"} />
         <Stack screenOptions={{ headerShown: false }}>
           <Stack.Screen name="index" />
-          <Stack.Screen name="Start" />
+          {/* <Stack.Screen name="Start" /> */}
           <Stack.Screen name="Rules" />
           <Stack.Screen name="PlayAlone" />
+          <Stack.Screen name="PlayTogether" />
         </Stack>
       </View>
     </ThemeProvider>

@@ -5,6 +5,7 @@ import PasswordInput from '@/src/components/PasswodInput/PasswordInput';
 import ButtonComponent from '@/src/components/Buttons/index';
 import { router } from 'expo-router';
 
+
 function PlayAlone() {
 
     const handleStartGame = () => {
