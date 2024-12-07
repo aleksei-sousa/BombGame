@@ -13,7 +13,11 @@ function PlayTogether() {
     }
 
     const handleNavToStartGame = () => {
-        router.back();
+        //router.back();
+        
+
+        //router.push('/Disarmed')
+        router.push('/Exploded')
     }
     return ( 
     <ScrollContainer>

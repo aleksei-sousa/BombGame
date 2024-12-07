@@ -49,6 +49,7 @@ export default function RootLayout() {
       <View style={{ flex: 1 }}>
         <StatusBar barStyle={"light-content"} />
         <Stack screenOptions={{ headerShown: false }}>
+          <Stack.Screen name="Disarmed" />
           <Stack.Screen name="index" />
           {/* <Stack.Screen name="Start" /> */}
           <Stack.Screen name="Rules" />
